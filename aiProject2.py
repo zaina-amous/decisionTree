@@ -96,8 +96,15 @@ predict1 = clf.predict(x_test)
 predict2 = clf1.predict(x1_test)
 # metrics.accuracy_score method assigns subset accuracy in multi-label classification.
 # so its basically Accuracy classification score
-print("Accuracy first: ",metrics.accuracy_score(y_test, predict1))
-print("Accuracy second: ", metrics.accuracy_score(y1_test, predict2))
+acc = metrics.accuracy_score(y_test, predict1)
+acc2 = metrics.accuracy_score(y1_test, predict2)
+acc_t = [acc, acc2]
+Yaxis= [1,2]
+print("Accuracy first: ", acc)
+print("Accuracy second: ", acc2 )
+labels = ['M1 accuracy', ' M2 accuracy']
+plt.bar( labels , acc_t)
+plt.savefig("comparison.png")
 
 # this function "plot_tree" is from the library sklearn.tree
 # we passed the feature names to construct the tree
