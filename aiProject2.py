@@ -14,9 +14,9 @@ col_names = ['NPG', 'PGL', 'DIA', 'TSF', 'INS', 'BMI', 'DPF', 'AGE', 'Diabetic']
 #names of the features only
 feature_colomns = ['NPG', 'PGL', 'DIA', 'TSF', 'INS', 'BMI', 'DPF', 'AGE']
 # get dataset
-#dataset = pd.read_csv(r"C:\Users\Asus ZenBook\Desktop\DiabetesData (1).csv", header=1, names=col_names)
+dataset = pd.read_csv(r"C:\Users\Asus ZenBook\Desktop\DiabetesData (1).csv", header=1, names=col_names)
 #the col_ names are placed on this dataset
-dataset = pd.read_csv(r"C:/Users/DiabetesData.csv", header=1, names=col_names)
+#dataset = pd.read_csv(r"C:/Users/DiabetesData.csv", header=1, names=col_names)
 #dataset2 = pd.read_csv(r"C:/Users/DiabetesData.csv", header=1, names=feature_colomns)
 
 #dataset2 equals this line the double parantheses is basically a subset
